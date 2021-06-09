@@ -1,0 +1,23 @@
+.services {
+  background: black;
+  color: rgb(221, 221, 221);
+}
+.image-service {
+  overflow: hidden;
+  background-size: cover;
+}
+.service-card {
+  text-align: center;
+  height: 28rem;
+}
+.logo {
+  display: flex;
+  height: auto;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.service-detail {
+  padding-top: 8rem;
+}

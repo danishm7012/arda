@@ -1,0 +1,27 @@
+.banner {
+  min-height: 40vh;
+  margin-bottom: 1rem;
+}
+.career-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left-block {
+  padding: 2rem;
+}
+
+.left-block h2 {
+  text-align: center;
+  font-weight: 600;
+}
+.left-block p {
+  font-weight: 400;
+}
+
+.right-block {
+  padding: 2rem;
+}
+
+.right-block h3 {
+  text-align: center;
+}

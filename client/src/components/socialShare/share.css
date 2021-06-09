@@ -1,0 +1,36 @@
+.social-share {
+  background: rgba(66, 97, 116, 0.479);
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.shareIcon:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 550px) {
+  .social-share {
+    background: rgb(255, 255, 255);
+    transform: unset;
+    top: unset;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    border-radius: 0;
+    flex-direction: row;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+
+    justify-content: center;
+  }
+
+  .shareIcon {
+    margin: 0 1rem;
+  }
+}

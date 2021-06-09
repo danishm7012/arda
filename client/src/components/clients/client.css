@@ -1,0 +1,15 @@
+.client-image {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+}
+.client-card {
+  height: 20rem;
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.2rem;
+}
+.client-p {
+  color: gainsboro;
+}

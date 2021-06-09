@@ -1,0 +1,65 @@
+.section {
+  height: auto;
+  width: 100%;
+  padding-top: 5rem;
+}
+h1 {
+  color: #ed9321;
+}
+h3 {
+  color: #ed9321;
+}
+h5 {
+  color: #0098ed;
+  padding-top: 1rem;
+}
+
+.service-p {
+  padding-top: 1rem;
+}
+
+.service-p span {
+  font-weight: lighter;
+  color: tomato;
+  font-weight: lighter;
+}
+
+.text-line {
+  background-color: transparent;
+  color: #eeeeee;
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #eeeeee 1px;
+  padding: 3px 10px;
+}
+.contact-btn {
+  background: #0098ed;
+  border: 0;
+  padding: 10px 24px;
+  color: #151515;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.team-card {
+  border-radius: 10px;
+}
+.contact-btn:hover {
+  background: #ed9321;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.ranking {
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.time {
+  font-size: 32px;
+}
