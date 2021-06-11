@@ -12,7 +12,7 @@ const Meta = ({ title, description, keywords }) => {
 }
 
 Meta.defaultProps = {
-  title: 'Welcome To ARDA | Home',
+  title: 'ARDA Solution | Home',
   description:
     'To help customers add value to their business by leveraging the power of digital.',
   keywords: 'cloud services, DevOps, consultancy',
