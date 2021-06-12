@@ -15,7 +15,7 @@ const BlogDetail = ({ match }) => {
     <div className='section'>
       <Container>
         <Meta
-          title={`${Blog.title}- DigiPremier`}
+          title={`${Blog.title}- ARDA`}
           description='Stay Update With Our Company'
         />
 
@@ -23,7 +23,7 @@ const BlogDetail = ({ match }) => {
           <Col>
             <Link to={`/info/blogs`}>
               <Button
-                variant='outline-light'
+                variant='outline-info'
                 size='sm'
                 style={{ fontSize: 14, float: 'left', marginTop: '0.7rem' }}
               >
@@ -40,10 +40,7 @@ const BlogDetail = ({ match }) => {
                 {Blog.auther} | {Blog.date}
               </p>
             </strong>
-            <p
-              className='text-left p-2'
-              style={{ color: 'whitesmoke', fontSize: '1rem' }}
-            >
+            <p className='text-left p-2' style={{ fontSize: '1rem' }}>
               {Blog.detail}
             </p>
             <h3>{Blog.H1}</h3>
