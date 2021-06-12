@@ -11,7 +11,7 @@ const Blog = ({ blog }) => {
           <p className='m-2 py-2 blog-p'>
             {blog.detail.slice(0, 500)}...{' '}
             <Link to={`/blogs/${blog._id}`}>
-              <span style={{ color: 'whitesmoke' }}>Read more</span>
+              <span style={{ color: 'skyblue' }}>Read more</span>
             </Link>{' '}
             <br />
             <br />

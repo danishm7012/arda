@@ -31,7 +31,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='ml-auto nav'>
-            <Nav.Link className='options' href='#home'>
+            <Nav.Link className='options' href='/'>
               HOME
             </Nav.Link>
 
@@ -41,70 +41,104 @@ const Header = () => {
               id='basic-nav-dropdown'
             >
               <h6 className='pl-2'>Technology</h6>
-              <NavDropdown.Item className='sub-options' href='#action/3.1'>
-                Cloud
-              </NavDropdown.Item>
-              <NavDropdown.Item className='sub-options' href='#action/3.2'>
-                Enterprise Solution
-              </NavDropdown.Item>
-              <NavDropdown.Item className='sub-options' href='#action/3.3'>
-                DevOps
-              </NavDropdown.Item>
-              <NavDropdown.Item className='sub-options' href='#action/3.4'>
-                Information Security
-              </NavDropdown.Item>
+              <LinkContainer to='/cloud'>
+                <NavDropdown.Item className='sub-options'>
+                  Cloud
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to='/Enterprise-Solution'>
+                <NavDropdown.Item className='sub-options'>
+                  Enterprise Solution
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to='/DevOps'>
+                <NavDropdown.Item className='sub-options'>
+                  DevOps
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to='/Information-Security'>
+                <NavDropdown.Item className='sub-options'>
+                  Information Security
+                </NavDropdown.Item>
+              </LinkContainer>
               <h6 className='pl-2'>Consulting</h6>
-              <NavDropdown.Item className='sub-options' href='#action/3.1'>
-                Digital Transformation
-              </NavDropdown.Item>
-              <NavDropdown.Item className='sub-options' href='#action/3.2'>
-                Advisory Services
-              </NavDropdown.Item>
-              <NavDropdown.Item className='sub-options' href='#action/3.3'>
-                Focused Solutions
-              </NavDropdown.Item>
+              <LinkContainer to='/Digital-Transformation'>
+                <NavDropdown.Item className='sub-options'>
+                  Digital Transformation
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to='/Advisory-Services'>
+                <NavDropdown.Item className='sub-options'>
+                  Advisory Services
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to='/Focused-Solutions'>
+                <NavDropdown.Item className='sub-options'>
+                  Focused Solutions
+                </NavDropdown.Item>
+              </LinkContainer>
               <h6 className='pl-2'>Education</h6>
-              <NavDropdown.Item className='sub-options' href='#action/3.1'>
-                E-Commerce
-              </NavDropdown.Item>
-              <NavDropdown.Item className='sub-options' href='#action/3.2'>
-                Digital Economy
-              </NavDropdown.Item>
+              <LinkContainer to='/E-Commerce'>
+                <NavDropdown.Item className='sub-options'>
+                  E-Commerce
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to='/Digital-Economy'>
+                <NavDropdown.Item className='sub-options'>
+                  Digital Economy
+                </NavDropdown.Item>
+              </LinkContainer>
             </NavDropdown>
             <NavDropdown
               className='options'
               title='WHAT WE ARE'
               id='basic-nav-dropdown'
             >
-              <NavDropdown.Item className='sub-options' href='#action/3.1'>
-                Executive Team
-              </NavDropdown.Item>
-              <NavDropdown.Item className='sub-options' href='#action/3.2'>
-                Consultant Profiles
-              </NavDropdown.Item>
-              <NavDropdown.Item className='sub-options' href='#action/3.2'>
-                Our Partners
-              </NavDropdown.Item>
+              <LinkContainer to='/Executive-Team'>
+                <NavDropdown.Item className='sub-options'>
+                  Executive Team
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to='/Consultant-Profiles'>
+                <NavDropdown.Item className='sub-options'>
+                  Consultant Profiles
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to='/Our-Partners'>
+                <NavDropdown.Item className='sub-options'>
+                  Our Partners
+                </NavDropdown.Item>
+              </LinkContainer>
             </NavDropdown>
             <NavDropdown
               className='options'
               title='SUCCESS STORIES'
               id='basic-nav-dropdown'
             >
-              <NavDropdown.Item className='sub-options' href='#action/3.1'>
-                Case Studies
-              </NavDropdown.Item>
-              <NavDropdown.Item className='sub-options' href='#action/3.2'>
-                Customer Testimonials
-              </NavDropdown.Item>
+              <LinkContainer to='/Case-Studies'>
+                <NavDropdown.Item className='sub-options'>
+                  Case Studies
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to='/Customer-Testimonials'>
+                <NavDropdown.Item className='sub-options'>
+                  Customer Testimonials
+                </NavDropdown.Item>
+              </LinkContainer>
             </NavDropdown>
-            <Nav.Link className='options' href='#link'>
-              CAREER
-            </Nav.Link>
-            <Nav.Link className='options' href='#link'>
-              News Updates
-            </Nav.Link>
-            <Button variant='info'>Contact Us</Button>
+            <LinkContainer to='/info/career'>
+              <Nav.Link className='options' href='#link'>
+                CAREER
+              </Nav.Link>
+            </LinkContainer>
+            <LinkContainer to='/info/news'>
+              <Nav.Link className='options' href='#link'>
+                News Updates
+              </Nav.Link>
+            </LinkContainer>
+            <LinkContainer to='/Contact'>
+              <Button variant='info'>Contact Us</Button>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Container>

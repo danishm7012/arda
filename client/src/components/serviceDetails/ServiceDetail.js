@@ -1,29 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { Row, Container, Col, Image, Button } from 'react-bootstrap'
-import axios from 'axios'
-
+import { Row, Container, Col, Button } from 'react-bootstrap'
 import './serviceDetail.css'
 import Meta from '../common/Meta'
 
 function ServiceDetail({ match }) {
-  const [service, setService] = useState({})
+  const [service, setService] = useState('')
   const slug = match.params._id
 
   //get brower history
   let history = useHistory()
 
   useEffect(() => {
-    axios
-      .get(`/api/service/slug/${slug}`)
-      .then((res) => {
-        setService(res.data)
-      })
-      .catch((err) => console.log(err))
+    setService('')
+    setService(slug)
   }, [slug])
   return (
     <div className='service-detail'>
-      <Meta title={`${service.name}`} />
+      <Meta title={`${service}`} />
       <Container>
         <Row>
           {' '}
@@ -39,13 +33,13 @@ function ServiceDetail({ match }) {
         </Row>
 
         <Row>
-          <Col lg={6} md={6} sm={12} xm={12}>
-            <h1>{service.name}</h1>
-            <p>{service.detail}</p>
+          <Col lg={12} md={12} sm={12} xm={12}>
+            <p>{`${service} content will be displayed here!`}</p>
+            {/* <p>{service.detail}</p> */}
           </Col>
-          <Col lg={6} md={6} sm={12} xm={12}>
+          {/*  <Col lg={6} md={6} sm={12} xm={12}>
             <Image src={service.image} height='auto' width='100%' />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </div>

@@ -38,8 +38,8 @@ const Career = () => {
   return (
     <div className='mt-5'>
       <Meta
-        title='Careers - Digi Premier'
-        description='Being a part of the Digi Premier'
+        title='Careers - Arda Solution'
+        description='Being a part of the ARDA'
       />
       <Image className='career-img' src='/images/career.jpg' width='100%' />
       <div>
@@ -48,14 +48,14 @@ const Career = () => {
             <Col className='left-block' sm={6}>
               <h2>Overview</h2>
               <p>
-                We, at Digi Premier create opportunities for our employees to
-                grow and expand their knowledge horizons substantially. The
-                Company is an equal opportunity employer and hires people from
-                various ethnicities and both genders without prejudice or bias.
+                We, at ARDA create opportunities for our employees to grow and
+                expand their knowledge horizons substantially. The Company is an
+                equal opportunity employer and hires people from various
+                ethnicities and both genders without prejudice or bias.
               </p>
               <br />
               <p>
-                Being a part of the Digi Premier, our employees’ commitment and
+                Being a part of the ARDA, our employees’ commitment and
                 determination never goes unnoticed, therefore we encourage
                 performance based reinforcement along with acknowledgement by
                 the whole team. The Company has a coherent and market driven
@@ -137,7 +137,7 @@ const Career = () => {
                 </Form.Group>
                 {success && <Message variant='success'>{success}</Message>}
 
-                <Button className='contact-btn' type='submit'>
+                <Button className='contact-btn' type='submit' variant='info'>
                   Submit
                 </Button>
               </Form>

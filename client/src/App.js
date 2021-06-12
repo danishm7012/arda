@@ -24,10 +24,10 @@ function App() {
         <Switch>
           <Route path='/info/career' exact component={Career} />
           <Route path='/info/GetQuote' exact component={QuoteForm} />
-          <Route path='/news' exact component={Blogs} />
+          <Route path='/info/news' exact component={Blogs} />
           <Route path='/info/clients' exact component={Clients} />
           <Route path='/blogs/:_id' exact component={BlogDetail} />
-          <Route path='/service/:_id' component={ServiceDetail} />
+          <Route path='/:_id' component={ServiceDetail} />
           <Route path='/' exact component={Home} />
         </Switch>
       </main>
